@@ -15,6 +15,6 @@ namespace HW014Rubakha.Implementations
         IListNode IListNode.Previous 
         { get; set; }
         int IListNode.Data 
-        { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        { get ; set; }
     }
 }
