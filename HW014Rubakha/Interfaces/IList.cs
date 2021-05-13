@@ -12,6 +12,11 @@ namespace HW014Rubakha.Interfaces
         IListNode AddLast(int data);
         IListNode AddFirst(int data);
 
+        IListNode RemoveFirst();
+        IListNode RemoveLast();
+
+        IListNode InsertAfter(int data, IListNode previousNode);
+
         bool RemoveByValue(int data);
 
         bool Contains(int data);
