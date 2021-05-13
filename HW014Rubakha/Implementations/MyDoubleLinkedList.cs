@@ -136,9 +136,43 @@ namespace HW014Rubakha.Implementations
             throw new NotImplementedException();
         }
 
-        public bool RemoveByValue(int data)
+        public IListNode RemoveByValue(int data)
         {
-            
+            if (count==0)
+            {
+                throw new ArgumentException("Can't delete node by value from empty list");
+            }
+            else
+            {
+                IListNode currentNode = Head;
+                do
+                {
+                    if (currentNode.Data == data)
+                    {
+
+                        if (currentNode == Head)
+                        {
+                            return RemoveFirst();
+                        }
+                        else if (currentNode == Tail)
+                        {
+                            return RemoveLast();
+                        }
+                        else
+                        {
+                            currentNode.Previous.Next = currentNode.Next;
+                            currentNode.Next.Previous = currentNode.Previous;
+                            count -= 1;
+                            return currentNode;
+                        }
+                        
+                    }
+                    currentNode = currentNode.Next;
+
+                } while (currentNode != null);
+
+                throw new ArgumentException("Value not found in list");
+            }
         }
 
         public IListNode InsertAfter(int data, IListNode previousNode)

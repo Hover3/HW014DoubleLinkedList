@@ -17,7 +17,7 @@ namespace HW014Rubakha.Interfaces
 
         IListNode InsertAfter(int data, IListNode previousNode);
 
-        bool RemoveByValue(int data);
+        IListNode RemoveByValue(int data);
 
         bool Contains(int data);
 
