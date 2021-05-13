@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace HW014Rubakha.Implementations
 {
-    public class MyDoubleLinkedList<T> : HW014Rubakha.Interfaces.IList, IEnumerable
+    public class MyDoubleLinkedList : HW014Rubakha.Interfaces.IList, IEnumerable
     {
         public int Count => throw new NotImplementedException();
 
@@ -23,7 +23,7 @@ namespace HW014Rubakha.Implementations
             throw new NotImplementedException();
         }
 
-        public IEnumerable<T> BackEnumerator()
+        public IEnumerable BackEnumerator()
         {
             throw new NotImplementedException();
         }
@@ -38,7 +38,7 @@ namespace HW014Rubakha.Implementations
             throw new NotImplementedException();
         }
 
-        public IEnumerator<T> GetEnumerator()
+        public IEnumerator GetEnumerator()
         {
             throw new NotImplementedException();
         }
@@ -48,9 +48,9 @@ namespace HW014Rubakha.Implementations
             throw new NotImplementedException();
         }
 
-        IEnumerator IEnumerable.GetEnumerator()
-        {
-            throw new NotImplementedException();
-        }
+        //IEnumerator<int> IEnumerable.GetEnumerator()
+        //{
+        //    throw new NotImplementedException();
+        //}
     }
 }

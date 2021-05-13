@@ -6,22 +6,22 @@ using System.Threading.Tasks;
 
 namespace HW014Rubakha.Interfaces
 {
-    interface IList<T>
+    interface IList
 
     {
-        IListNode<T> AddLast(T data);
-        IListNode<T> AddFirst(T data);
+        IListNode AddLast(int data);
+        IListNode AddFirst(int data);
 
-        bool RemoveByValue(T data);
+        bool RemoveByValue(int data);
 
-        bool Contains(T data);
+        bool Contains(int data);
 
         void Clear();
 
         int Count { get; }
         bool IsEmpty { get; }
 
-        IEnumerable<T> BackEnumerator();
+        //IEnumerable<int> BackEnumerator();
 
 
 
