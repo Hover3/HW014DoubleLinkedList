@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace HW014Rubakha.Interfaces
 {
-    public interface IListNode<T>
+    public interface IListNode
     {
-        public IListNode<T> Next { get; internal set; }
-        public IListNode<T> Previous { get; internal set; }
-        public T Data { get; set; }
+        public IListNode Next { get; internal set; }
+        public IListNode Previous { get; internal set; }
+        public int Data { get; set; }
 
         
 
