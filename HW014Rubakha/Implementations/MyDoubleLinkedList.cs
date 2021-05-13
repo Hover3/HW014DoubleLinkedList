@@ -312,7 +312,6 @@ namespace HW014Rubakha.Implementations
             else
             { return false; }
 
-
         }
 
         void IEnumerator.Reset()

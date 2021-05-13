@@ -1,4 +1,5 @@
 ﻿using System;
+using HW014Rubakha.Implementations;
 
 namespace HW014Rubakha
 {
@@ -6,7 +7,11 @@ namespace HW014Rubakha
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("HW14 Double linked list");
+            MyDoubleLinkedList myList = new MyDoubleLinkedList();
+            Console.WriteLine($"List item count: {myList.count}");
+
+
         }
     }
 }
