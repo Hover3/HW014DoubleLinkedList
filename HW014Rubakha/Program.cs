@@ -24,6 +24,31 @@ namespace HW014
             {
                 Console.Write($"{value} ");
             }
+            Console.WriteLine("");
+
+            Console.WriteLine($"List item count: {myList.count}");
+
+            Console.WriteLine("Deleting by value 10");
+            myList.RemoveByValue(10);
+
+            Console.WriteLine("Enuming list backward:");
+            foreach (int value in myList)
+            {
+                Console.Write($"{value} ");
+            }
+            Console.WriteLine("");
+            Console.WriteLine($"List item count: {myList.count}");
+
+            Console.WriteLine("Clearing list");
+            myList.Clear();
+            Console.WriteLine("Enuming list backward:");
+            foreach (int value in myList)
+            {
+                Console.Write($"{value} ");
+            }
+            Console.WriteLine("");
+            Console.WriteLine($"List item count: {myList.count}");
+
 
 
 
