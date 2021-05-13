@@ -1,7 +1,7 @@
 ﻿using System;
-using HW014Rubakha.Implementations;
+using HW014.Implementations;
 
-namespace HW014Rubakha
+namespace HW014
 {
     class Program
     {

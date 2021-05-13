@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using HW014Rubakha.Interfaces;
+using HW014.Interfaces;
 
-namespace HW014Rubakha.Implementations
+namespace HW014.Implementations
 {
     class MyListNode : IListNode
     {

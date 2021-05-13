@@ -4,11 +4,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using HW014Rubakha.Interfaces;
+using HW014.Interfaces;
 
-namespace HW014Rubakha.Implementations
+namespace HW014.Implementations
 {
-    public class MyDoubleLinkedList : HW014Rubakha.Interfaces.IList, IEnumerator<int>, IEnumerable
+    public class MyDoubleLinkedList : HW014.Interfaces.IList, IEnumerator<int>, IEnumerable
     {
         public MyDoubleLinkedList()
         {

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HW014Rubakha.Interfaces
+namespace HW014.Interfaces
 {
     interface IList
 
