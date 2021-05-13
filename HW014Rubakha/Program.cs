@@ -16,6 +16,15 @@ namespace HW014
             Console.WriteLine($"Adding item 10 at the end");
             myList.AddLast(10);
 
+            Console.WriteLine($"Adding item 5 after list head");
+            myList.InsertAfter(5, myList.Head);
+
+            Console.WriteLine("Enuming list backward:");
+            foreach (int value in myList)
+            {
+                Console.Write($"{value} ");
+            }
+
 
 
         }

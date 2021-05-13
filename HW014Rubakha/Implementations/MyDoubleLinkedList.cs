@@ -152,7 +152,7 @@ namespace HW014.Implementations
 
         public IEnumerator<int> GetEnumerator()
         {
-            throw new NotImplementedException();
+            return this;
         }
 
         public IListNode RemoveByValue(int data)
