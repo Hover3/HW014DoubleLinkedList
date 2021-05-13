@@ -26,7 +26,7 @@ namespace HW014Rubakha.Interfaces
         int Count { get; }
         bool IsEmpty { get; }
 
-        //IEnumerable<int> BackEnumerator();
+        IEnumerator<int> BackEnumerator();
 
 
 

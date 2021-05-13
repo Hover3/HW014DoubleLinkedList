@@ -8,7 +8,7 @@ using HW014Rubakha.Interfaces;
 
 namespace HW014Rubakha.Implementations
 {
-    public class MyDoubleLinkedList : HW014Rubakha.Interfaces.IList, IEnumerable
+    public class MyDoubleLinkedList : HW014Rubakha.Interfaces.IList, IEnumerator<int>, IEnumerable
     {
         public MyDoubleLinkedList()
         {
@@ -16,6 +16,8 @@ namespace HW014Rubakha.Implementations
             IListNode Head=null;
             IListNode Tail=null;
          }
+
+        private IListNode currentNode = null;
 
         public int count;
         public IListNode Head;
@@ -41,6 +43,23 @@ namespace HW014Rubakha.Implementations
                     return false;
                 }
             }
+        }
+
+        int IEnumerator<int>.Current
+        {
+            get
+            {
+                return currentNode.Data;
+            }
+        }
+
+        object IEnumerator.Current
+        {
+            get
+            {
+                return currentNode.Data;
+            }
+            
         }
 
         public IListNode AddFirst(int data)
@@ -96,9 +115,9 @@ namespace HW014Rubakha.Implementations
             return tmpNode;
         }
 
-        public IEnumerable BackEnumerator()
+        public IEnumerator<int> BackEnumerator()
         {
-            throw new NotImplementedException();
+            return this;
         }
 
         public void Clear()
@@ -131,7 +150,7 @@ namespace HW014Rubakha.Implementations
             }
         }
 
-        public IEnumerator GetEnumerator()
+        public IEnumerator<int> GetEnumerator()
         {
             throw new NotImplementedException();
         }
@@ -273,9 +292,37 @@ namespace HW014Rubakha.Implementations
             }
         }
 
-        //IEnumerator<int> IEnumerable.GetEnumerator()
-        //{
-        //    throw new NotImplementedException();
-        //}
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return this;
+        }
+
+        bool IEnumerator.MoveNext()
+        {
+            if (currentNode==null)
+            {
+                currentNode = Tail;
+            }
+            else
+            {
+                currentNode = currentNode.Previous;
+            }
+            if (currentNode != null)
+            { return true; }
+            else
+            { return false; }
+
+
+        }
+
+        void IEnumerator.Reset()
+        {
+            currentNode = null;
+        }
+
+        void IDisposable.Dispose()
+        {
+            
+        }
     }
 }
