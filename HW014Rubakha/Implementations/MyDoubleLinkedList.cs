@@ -7,18 +7,18 @@ using System.Threading.Tasks;
 
 namespace HW014Rubakha.Implementations
 {
-    public class MyDoubleLinkedList<T> : HW014Rubakha.Interfaces.IList<T>, IEnumerable<T>
+    public class MyDoubleLinkedList<T> : HW014Rubakha.Interfaces.IList, IEnumerable
     {
         public int Count => throw new NotImplementedException();
 
         public bool IsEmpty => throw new NotImplementedException();
 
-        public Interfaces.IListNode<T> AddFirst(T data)
+        public Interfaces.IListNode AddFirst(int data)
         {
             throw new NotImplementedException();
         }
 
-        public Interfaces.IListNode<T> AddLast(T data)
+        public Interfaces.IListNode AddLast(int data)
         {
             throw new NotImplementedException();
         }
@@ -33,7 +33,7 @@ namespace HW014Rubakha.Implementations
             throw new NotImplementedException();
         }
 
-        public bool Contains(T data)
+        public bool Contains(int data)
         {
             throw new NotImplementedException();
         }
@@ -43,7 +43,7 @@ namespace HW014Rubakha.Implementations
             throw new NotImplementedException();
         }
 
-        public bool RemoveByValue(T data)
+        public bool RemoveByValue(int data)
         {
             throw new NotImplementedException();
         }
